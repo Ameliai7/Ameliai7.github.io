@@ -50,14 +50,15 @@ const navItems = [
 ]
 
 function DigitalClock() {
-	const [time, setTime] = useState(new Date())
+	const [time, setTime] = useState<Date | null>(null)
 	useEffect(() => {
+		setTime(new Date())
 		const timer = setInterval(() => setTime(new Date()), 1000)
 		return () => clearInterval(timer)
 	}, [])
 	return (
 		<div className='font-mono text-2xl font-bold tracking-widest text-primary'>
-			{dayjs(time).format('HH : mm : ss')}
+			{time ? dayjs(time).format('HH : mm : ss') : '-- : -- : --'}
 		</div>
 	)
 }

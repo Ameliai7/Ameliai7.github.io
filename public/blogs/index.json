@@ -1,0 +1,90 @@
+[
+  {
+    "slug": "ai-consumer-crisis",
+    "title": "当AI不再创造消费者：「智能危机」预言与中国道路",
+    "tags": ["AI经济", "宏观分析"],
+    "date": "2026-02-25",
+    "summary": "讨论AI对宏观经济、就业、资本市场的影响与风险推演",
+    "cover": "/blogs/wechat-covers/cover_01.jpg",
+    "hidden": false,
+    "category": "微信公众号",
+    "externalUrl": "https://mp.weixin.qq.com/s/KgYgp1QsoN27toMC_NAH2A"
+  },
+  {
+    "slug": "llm-capability-ceiling",
+    "title": "大模型的能力还远没到天花板",
+    "tags": ["大模型", "技术"],
+    "date": "2026-05-04",
+    "summary": "聚焦大模型技术能力边界、训练组织方式、RL scaling等",
+    "cover": "/blogs/wechat-covers/cover_02.jpg",
+    "hidden": false,
+    "category": "微信公众号",
+    "externalUrl": "https://mp.weixin.qq.com/s/AXZz-PYifZUGqhKM4T53yw"
+  },
+  {
+    "slug": "agent-reshaping",
+    "title": "Agent正重塑一切",
+    "tags": ["Agent", "产品"],
+    "date": "2026-05-04",
+    "summary": "探讨Agent范式如何重塑产品、服务形态与商业逻辑",
+    "cover": "/blogs/wechat-covers/cover_03.jpg",
+    "hidden": false,
+    "category": "微信公众号",
+    "externalUrl": "https://mp.weixin.qq.com/s/UXMvdfvtEj3L5tY1PA_FNw"
+  },
+  {
+    "slug": "ai-education-learning",
+    "title": "从AI教育看「理解知识」、「学会学习」",
+    "tags": ["AI教育", "学习"],
+    "date": "2026-05-06",
+    "summary": "从AI教育切入，反思「理解知识」与「学会学习」",
+    "cover": "/blogs/wechat-covers/cover_04.jpg",
+    "hidden": false,
+    "category": "微信公众号",
+    "externalUrl": "https://mp.weixin.qq.com/s/1RhnAAiEEvN6C73f8vDkig"
+  },
+  {
+    "slug": "tools-find-me",
+    "title": "让工具来找我——智能系统的感知性与自适应性转型",
+    "tags": ["产品设计", "系统设计"],
+    "date": "2026-05-15",
+    "summary": "关于智能系统的感知性、自适应性与主动式设计范式",
+    "cover": "/blogs/wechat-covers/cover_05.jpg",
+    "hidden": false,
+    "category": "微信公众号",
+    "externalUrl": "https://mp.weixin.qq.com/s/yz26HQmLC-GKO71kE9kB8g"
+  },
+  {
+    "slug": "ai-flattery-metacognition",
+    "title": "AI谄媚与人的元认知",
+    "tags": ["AI与人文", "心理学"],
+    "date": "2026-05-20",
+    "summary": "AI谄媚实验与人的元认知能力",
+    "cover": "/blogs/wechat-covers/cover_06.jpg",
+    "hidden": false,
+    "category": "微信公众号",
+    "externalUrl": "https://mp.weixin.qq.com/s/Gd0ig5_lsZMlyLc12VXKxw"
+  },
+  {
+    "slug": "human-rationality-ai-law",
+    "title": "人的理性为AI立法？",
+    "tags": ["AI哲学", "思辨"],
+    "date": "2026-06-13",
+    "summary": "对「人是否为主体、AI是否客体」的哲学与伦理反思",
+    "cover": "/blogs/wechat-covers/cover_07.jpg",
+    "hidden": false,
+    "category": "微信公众号",
+    "externalUrl": "https://mp.weixin.qq.com/s/GV4BAkigK718_gU5lW6-_g"
+  },
+  {
+    "slug": "deep-thinking-ai-era",
+    "title": "AI时代下的「深度思考」空间",
+    "tags": ["AI与思考", "学习方法"],
+    "date": "2026-06-26",
+    "summary": "AI时代如何保留深度思考、对抗认知外包",
+    "cover": "/blogs/wechat-covers/cover_08.jpg",
+    "hidden": false,
+    "category": "微信公众号",
+    "externalUrl": "https://mp.weixin.qq.com/s/bYQA3rObw2BTN6sGdmET3g"
+  }
+]

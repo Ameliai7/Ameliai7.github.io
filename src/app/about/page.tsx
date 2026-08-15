@@ -85,7 +85,6 @@ export default function AboutPage() {
 					<div>
 						<h2 className='text-2xl font-bold text-primary'>{site.name}</h2>
 						<p className='text-sm text-muted'>{profile.title}</p>
-						<p className='mt-1 text-xs text-secondary/70'>{profile.bio}</p>
 					</div>
 				</div>
 				<div className='space-y-3'>

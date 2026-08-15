@@ -341,8 +341,9 @@ export default function Home() {
 			.then((data: BlogItem[]) => {
 				const visible = data.filter(item => !(item as any).hidden)
 				setTotalArticles(visible.length)
-				// 取最新 5 篇
+				// 取最新 5 篇（排除「关于本站」站点说明）
 				const sorted = [...visible]
+					.filter(item => item.slug !== 'about-site')
 					.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 					.slice(0, 5)
 				setRecentArticles(sorted)

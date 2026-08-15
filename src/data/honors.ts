@@ -15,11 +15,11 @@ export const awards: Honor[] = [
 	{ title: '"挑战杯"中国大学生创业计划竞赛 校银奖', year: '2026', category: '竞赛获奖', level: '校级' },
 	{ title: '全国大学生电子商务"创新、创意及创业"挑战赛 校二等奖', year: '2026', category: '竞赛获奖', level: '校级' },
 	{ title: '中国国际大学生创新大赛 校铜奖', year: '2025', category: '竞赛获奖', level: '校级' },
-	{ title: '"珞珈之春"科技节3D建模大赛 校三等奖', year: '2024', category: '竞赛获奖', level: '校级' },
-	{ title: '武汉大学社会实践一等奖及优秀个人', year: '2024', category: '竞赛获奖', level: '校级' }
+	{ title: '"珞珈之春"科技节3D建模大赛 校三等奖', year: '2024', category: '竞赛获奖', level: '校级' }
 ]
 
 export const personalHonors: Honor[] = [
+	{ title: '武汉大学社会实践一等奖及优秀个人', year: '2024', category: '个人荣誉', level: '校级' },
 	{ title: '武汉大学乙等奖学金（连续两年）', category: '个人荣誉', level: '校级' },
 	{ title: '武汉大学优秀学生', category: '个人荣誉', level: '校级' },
 	{ title: '武汉大学优秀学生干部（连续两年）', category: '个人荣誉', level: '校级' },

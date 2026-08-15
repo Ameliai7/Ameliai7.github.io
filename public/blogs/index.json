@@ -1,5 +1,14 @@
 [
   {
+    "slug": "about-site",
+    "title": "关于本站",
+    "tags": ["站点", "说明"],
+    "date": "2026-08-15",
+    "summary": "本站介绍：内容板块、技术栈与文章说明。",
+    "hidden": false,
+    "category": "站点"
+  },
+  {
     "slug": "ai-consumer-crisis",
     "title": "当AI不再创造消费者：「智能危机」预言与中国道路",
     "tags": ["AI经济", "宏观分析"],

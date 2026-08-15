@@ -65,7 +65,7 @@ export function InterestGallery({ images, alt }: InterestGalleryProps) {
 		<div className='flex flex-col gap-3'>
 			{/* 主图展示区 */}
 			<div className='group relative overflow-hidden rounded-xl border border-border/60 bg-gray-100/60 dark:bg-white/5'>
-				<div className='flex h-64 items-center justify-center sm:h-80'>
+				<div className='flex h-56 items-center justify-center sm:h-72'>
 					<AnimatePresence custom={direction} mode='popLayout' initial={false}>
 						<motion.img
 							key={images[index]}

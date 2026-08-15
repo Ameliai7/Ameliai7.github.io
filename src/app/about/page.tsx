@@ -6,48 +6,37 @@ import { awards, personalHonors } from '@/data/honors'
 import { interests } from '@/data/interests'
 import ExperienceSection from '@/components/experience-section'
 import { InterestGallery } from '@/components/interest-gallery'
-import { Trophy, Sparkles } from 'lucide-react'
 
-const levelColors: Record<string, { badge: string; text: string; dot: string }> = {
-	'国家级': { badge: 'bg-red-100 dark:bg-red-900/30', text: 'text-red-600 dark:text-red-400', dot: 'bg-red-500' },
-	'国际级': { badge: 'bg-purple-100 dark:bg-purple-900/30', text: 'text-purple-600 dark:text-purple-400', dot: 'bg-purple-500' },
-	'省级': { badge: 'bg-blue-100 dark:bg-blue-900/30', text: 'text-blue-600 dark:text-blue-400', dot: 'bg-blue-500' },
-	'校级': { badge: 'bg-green-100 dark:bg-green-900/30', text: 'text-green-600 dark:text-green-400', dot: 'bg-green-500' },
+/** 等级小圆点配色（唯一的有色元素，保持克制） */
+const levelConfig: Record<string, { dot: string }> = {
+	'国际级': { dot: 'bg-amber-400' },
+	'国家级': { dot: 'bg-amber-500' },
+	'省级': { dot: 'bg-slate-400' },
+	'校级': { dot: 'bg-amber-600' },
 }
 
 function LevelBadge({ level, size = 'sm' }: { level: string; size?: 'sm' | 'md' }) {
-	const colors = levelColors[level] ?? levelColors['校级']
-	const sizeClass = size === 'md' ? 'px-3 py-1 text-sm' : 'px-2.5 py-0.5 text-xs'
+	const sizeClass = size === 'md' ? 'px-2.5 py-0.5 text-sm' : 'px-2 py-0.5 text-xs'
 	return (
-		<span className={`inline-flex items-center gap-1.5 rounded-full font-medium ${sizeClass} ${colors.badge} ${colors.text}`}>
-			<span className={`inline-block size-1.5 rounded-full ${colors.dot}`} />
+		<span className={`inline-flex shrink-0 items-center rounded-full bg-gray-100 font-medium text-muted dark:bg-white/10 ${sizeClass}`}>
 			{level}
 		</span>
 	)
 }
 
 function HonorCard({ honor, index, size = 'sm' }: { honor: { title: string; year?: string; level: string }; index: number; size?: 'sm' | 'md' }) {
+	const config = levelConfig[honor.level] ?? levelConfig['校级']
 	return (
 		<motion.div
 			initial={{ opacity: 0, y: 20 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{ duration: 0.4, delay: index * 0.06 }}
-			className='group flex items-center gap-4 rounded-xl border border-border/60 bg-white/50 px-5 py-4 shadow-sm transition-all hover:border-brand/30 hover:shadow-md dark:bg-white/5'>
-			<div className='flex shrink-0 items-center justify-center rounded-lg bg-amber-50 p-2 text-amber-500 dark:bg-amber-900/20 dark:text-amber-400'>
-				<Trophy className={size === 'md' ? 'size-5' : 'size-4'} />
-			</div>
-			<div className='flex-1 min-w-0'>
-				<p className={`font-medium text-primary ${size === 'md' ? 'text-base' : 'text-sm'}`}>{honor.title}</p>
-			</div>
-			<div className='flex shrink-0 items-center gap-2.5'>
-				{honor.year && (
-					<span className='inline-flex items-center gap-1 rounded-md bg-gray-100 px-2 py-0.5 text-xs font-medium text-muted dark:bg-white/10'>
-						<Sparkles className='size-3' />
-						{honor.year}
-					</span>
-				)}
-				<LevelBadge level={honor.level} size={size} />
-			</div>
+			className='group flex items-center gap-3 rounded-xl border border-border/60 bg-white/50 px-4 py-3 shadow-sm transition-all hover:border-brand/30 hover:shadow-md dark:bg-white/5'>
+			{/* 等级小圆点：唯一的有色元素 */}
+			<span className={`size-2 shrink-0 rounded-full ${config.dot}`} />
+			<p className={`min-w-0 flex-1 font-medium text-primary ${size === 'md' ? 'text-base' : 'text-sm'}`}>{honor.title}</p>
+			{honor.year && <span className='shrink-0 text-xs text-muted'>{honor.year}</span>}
+			<LevelBadge level={honor.level} size={size} />
 		</motion.div>
 	)
 }
@@ -163,7 +152,7 @@ export default function AboutPage() {
 					{/* 竞赛获奖 */}
 					<div>
 						<div className='mb-3 flex items-center gap-2'>
-							<span className='block h-4 w-1 rounded-full bg-red-400' />
+							<span className='block h-4 w-1 rounded-full bg-gradient-to-b from-orange-400 to-orange-500' />
 							<h4 className='font-semibold text-primary'>竞赛获奖</h4>
 							<span className='ml-auto text-xs text-muted'>{awards.length} 项</span>
 						</div>
@@ -176,7 +165,7 @@ export default function AboutPage() {
 					{/* 个人荣誉 */}
 					<div>
 						<div className='mb-3 flex items-center gap-2'>
-							<span className='block h-4 w-1 rounded-full bg-green-400' />
+							<span className='block h-4 w-1 rounded-full bg-gradient-to-b from-orange-400 to-orange-600' />
 							<h4 className='font-semibold text-primary'>个人荣誉</h4>
 							<span className='ml-auto text-xs text-muted'>{personalHonors.length} 项</span>
 						</div>
@@ -206,8 +195,8 @@ export default function AboutPage() {
 							initial={{ opacity: 0, y: 15 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ duration: 0.4, delay: 0.55 + i * 0.08 }}
-							className='flex flex-col gap-6 rounded-2xl border border-border/80 bg-card p-6 shadow-sm md:flex-row md:items-start md:p-7'>
-							<div className='md:w-56 md:shrink-0 md:pt-1'>
+							className='flex flex-col gap-6 rounded-2xl border border-border/80 bg-card p-6 shadow-sm md:flex-row md:items-center md:p-7'>
+							<div className='md:w-56 md:shrink-0'>
 								<h4 className='text-lg font-bold text-primary'>{item.titleCn}</h4>
 								<p className='mt-0.5 text-xs uppercase tracking-wide text-muted'>{item.title}</p>
 								<p className='mt-3 text-sm leading-relaxed text-secondary'>{item.description}</p>

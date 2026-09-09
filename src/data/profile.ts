@@ -2,7 +2,7 @@
  * 个人简介
  */
 export const profile = {
-	name: 'Amelia',
+	name: '陈鹳嫒',
 	title: '数据分析 / 产品经理',
 	detailedBio: [
 		'武汉大学信息管理与信息系统本科生，GPA 3.72/4.0。',

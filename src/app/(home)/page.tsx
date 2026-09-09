@@ -358,7 +358,7 @@ export default function Home() {
 			<header className='fixed inset-x-0 top-0 z-50 border-b border-border bg-bg/80 backdrop-blur-md'>
 				<div className='mx-auto flex h-16 max-w-6xl items-center justify-between px-6'>
 					<Link href='/' className='text-lg font-bold tracking-tight text-primary'>
-						Amelia<span className='text-brand'>.</span>
+						陈鹳嫒<span className='text-brand'>.</span>
 					</Link>
 					<nav className='hidden items-center gap-6 md:flex'>
 						{navItems.map(item => {
@@ -399,7 +399,7 @@ export default function Home() {
 						<motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.3 }}
 							className='relative hidden md:block'>
 							<div className='flex h-64 w-64 items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-orange-100 via-amber-50 to-yellow-100 shadow-lg dark:from-orange-900/20 dark:via-amber-900/20 dark:to-yellow-900/20'>
-								<img src='/images/blogger/avatar.jpg' alt='Amelia' className='h-full w-full object-cover' />
+								<img src='/images/blogger/avatar.jpg' alt='陈鹳嫒' className='h-full w-full object-cover' />
 							</div>
 						</motion.div>
 					</div>
@@ -426,11 +426,10 @@ export default function Home() {
 							className='rounded-2xl border border-border/80 bg-card p-5 shadow-sm'>
 							<div className='mb-3 flex items-center gap-3'>
 								<div className='flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-orange-100 dark:bg-orange-900/30'>
-									<img src='/images/blogger/avatar.jpg' alt='Amelia' className='h-full w-full object-cover' />
+									<img src='/images/blogger/avatar.jpg' alt='陈鹳嫒' className='h-full w-full object-cover' />
 								</div>
 								<div>
-									<p className='font-semibold text-primary'>Amelia</p>
-									<p className='text-xs text-muted'>求职方向：数据分析 / 产品经理</p>
+									<p className='font-semibold text-primary'>陈鹳嫒</p>
 								</div>
 							</div>
 							<p className='text-xs leading-relaxed text-muted'>武汉大学信息管理与信息系统本科生，GPA 3.72/4.0。实习经历覆盖前端开发与专家咨询，有完整项目开发经历。</p>
@@ -654,7 +653,7 @@ export default function Home() {
 						className='rounded-2xl border border-border/80 bg-card p-8 shadow-sm'>
 						<div className='mb-6 flex items-center gap-4'>
 							<div className='flex h-16 w-16 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-orange-100 dark:bg-orange-900/30'>
-								<img src='/images/blogger/avatar.jpg' alt='Amelia' className='h-full w-full object-cover' />
+								<img src='/images/blogger/avatar.jpg' alt='陈鹳嫒' className='h-full w-full object-cover' />
 							</div>
 							<div>
 								<h3 className='text-xl font-bold text-primary'>{site.name}</h3>

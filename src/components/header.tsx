@@ -25,7 +25,7 @@ export default function Header() {
 		<header className='fixed inset-x-0 top-0 z-50 border-b border-border bg-bg/80 backdrop-blur-md'>
 			<div className='mx-auto flex h-16 max-w-6xl items-center justify-between px-6'>
 				<Link href='/' className='text-lg font-bold tracking-tight text-primary'>
-					Amelia<span className='text-brand'>.</span>
+					陈鹳嫒<span className='text-brand'>.</span>
 				</Link>
 				<nav className='hidden items-center gap-6 md:flex'>
 					{navItems.map(item => {

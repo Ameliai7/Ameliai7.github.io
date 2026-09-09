@@ -2,11 +2,11 @@
  * 站点基本信息
  */
 export const site = {
-	name: 'Amelia',
-	fullName: 'Amelia',
+	name: '陈鹳嫒',
+	fullName: '陈鹳嫒',
 	slogan: '精骛八极，心游万仞',
 	domain: 'ameliai7.github.io',
-	description: 'Amelia 的个人空间 — 数据分析 / 产品经理方向',
+	description: '陈鹳嫒 的个人空间 — 数据分析 / 产品经理方向',
 	nav: [
 		{ id: 'hero', label: '首页' },
 		{ id: 'about', label: '关于' },

@@ -21,8 +21,8 @@
 	--color-border: #e5e7eb;
 
 	--font-sans:
-		'PingFang SC', -apple-system, system-ui, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif, BlinkMacSystemFont, 'Helvetica Neue',
-		'Hiragino Sans GB', 'Microsoft YaHei', Arial;
+		var(--font-noto-serif-sc), 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif CN', 'Songti SC', 'SimSun',
+		'PingFang SC', -apple-system, system-ui, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* ===== Dark Mode (class-based) ===== */

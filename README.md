@@ -1,8 +1,8 @@
-# Amelia 的个人网站
+# 陈鹳嫒的个人网站
 
 [![Deploy to GitHub Pages](https://github.com/Ameliai7/Ameliai7.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/Ameliai7/Ameliai7.github.io/actions/workflows/deploy.yml)
 
-Amelia 的个人空间 — 数据分析 / 产品经理方向。基于 Next.js 构建，静态导出后部署到 GitHub Pages。
+陈鹳嫒的个人空间 — 数据分析 / 产品经理方向。基于 Next.js 构建，静态导出后部署到 GitHub Pages。
 
 ## 在线访问
 

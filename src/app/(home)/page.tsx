@@ -383,13 +383,15 @@ export default function Home() {
 				</div>
 				<div className='relative mx-auto max-w-6xl'>
 					<div className='flex flex-col items-center gap-8 md:flex-row md:items-start md:justify-between'>
-						<div className='max-w-xl text-center md:text-left'>
+						<div className='max-w-xl text-center md:w-full md:max-w-2xl md:text-left'>
 						<motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
 								className='mb-2 text-sm font-medium text-brand/80'>Welcome to</motion.p>
-							<motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}
-								className='mb-4 text-5xl font-bold tracking-tight md:text-7xl text-primary'>{site.name}</motion.h1>
-							<motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
-								className='mb-6 text-lg text-muted italic'>{site.slogan}</motion.p>
+							<div className='mb-6 flex flex-col flex-wrap items-center gap-x-4 gap-y-2 md:flex-row md:items-baseline md:justify-between'>
+								<motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }}
+									className='text-5xl font-bold tracking-tight md:text-7xl text-primary'>{site.name}</motion.h1>
+								<motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}
+									className='text-xl text-muted italic md:text-3xl'>{site.slogan}</motion.p>
+							</div>
 							<motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }}
 								className='flex items-center justify-center gap-4 md:justify-start'>
 								<a href='#projects' className='rounded-full bg-primary px-6 py-2.5 text-sm font-medium text-white transition-all hover:opacity-90 dark:bg-white dark:text-gray-900'>浏览项目</a>
@@ -399,7 +401,7 @@ export default function Home() {
 						<motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.3 }}
 							className='relative hidden md:block'>
 							<div className='flex h-64 w-64 items-center justify-center overflow-hidden rounded-3xl bg-gradient-to-br from-orange-100 via-amber-50 to-yellow-100 shadow-lg dark:from-orange-900/20 dark:via-amber-900/20 dark:to-yellow-900/20'>
-								<img src='/images/blogger/avatar.jpg' alt='陈鹳嫒' className='h-full w-full object-cover' />
+								<img src='/images/blogger/hero.jpg' alt='陈鹳嫒' className='h-full w-full object-cover' />
 							</div>
 						</motion.div>
 					</div>
